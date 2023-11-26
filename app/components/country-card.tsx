@@ -6,7 +6,7 @@ function CountryCard(props: { country: Country }) {
   const { country } = props;
 
   return (
-    <Link href={`country/${country.name.common}`} className="group/item">
+    <Link href={`/country/${country.name.common.toLowerCase()}`} className="group/item">
       <div className="m-2 border rounded-lg w-60 h-44 flex flex-col items-center bg-gray-50 group-hover/item:bg-slate-100">
         <div className="w-36 h-28 flex items-center justify-center">
           <Image
